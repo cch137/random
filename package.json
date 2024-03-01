@@ -1,0 +1,22 @@
+{
+  "name": "@cch137/random",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "devbuild": "tsc -w",
+    "devstart": "nodemon ./dist/index.js",
+    "test": "npm-run-all --parallel devbuild devstart"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cch137/random"
+  },
+  "author": "cch137",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.3.3"
+  }
+}
