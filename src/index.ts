@@ -21,7 +21,7 @@ export class Random {
   }
 
   random(start = 0, end = 1) {
-    return start + this.#core.random() * end;
+    return start + this.#core.random() * (end - start);
   }
 
   randint(start?: number, end?: number) {
@@ -32,7 +32,7 @@ export class Random {
     if (end === undefined) {
       (end = start), (start = 0);
     }
-    return Math.floor(start + this.#core.random() * end);
+    return Math.floor(start + this.#core.random() * (end - start));
   }
 
   choice<T>(array: T[]): T;
